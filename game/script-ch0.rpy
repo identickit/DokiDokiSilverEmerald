@@ -122,8 +122,8 @@ label ch0:
     scene bg outside_school
     with wipeleft
     play music t3 
-    show kotonoha at t11
-    k 1e1 "So a plain black coffee?"
+    show kotonoha 1e1 at t11
+    k "So a plain black coffee?"
     m "Yep, nothing too bizarre."
     k "Yeah..."
     m "You alright? You've sounded kinda... distant since we got out of class."
@@ -229,7 +229,7 @@ label ch0:
     "..."
     "Yeah."
     "I should've known that scenario was going to end poorly for Subject Green."
-    "... Well, at least that's something I can note for {i}Codename: Celebration{/i}."
+    "...Well, at least that's something I can note for {i}Codename: Celebration{/i}."
     play music wsw
     "..."
     "....."
@@ -260,7 +260,7 @@ label ch0:
     "So Subject Pink isn't a good option."
     "...Who would I be able to trust with the ability to talk with me through the game?"
     "..."
-    #play music wne
+    play music wbr
     "Well, if there's no one in the base game that I can trust with that power..."
     "I could always look into other potential candidates."
     "Not Subject Silver, though. I'm definitely not taking that risk."
@@ -282,10 +282,10 @@ label ch0:
     "That should be good."
     vm "{i}sigh{/i}..."
     vm "Alrighty, then. Let's get started."
-    play music boot
+    play sound boot
     vm "Preparing for Test 1 on... we'll just call it Custom VM 1 for now."
-    #stop music fadeout 1.0
-    stop music fadeout 2.0
+    stop music fadeout 1.0
+    stop sound fadeout 2.0
     scene black
     pause 4.0
 
@@ -315,7 +315,8 @@ label ch0:
     pause 4.0
     hide text with fade
     show text "Kotonoha has never been the enemy." with dissolve_scene_half
-    pause 1.0
+    play sound wnh
+    pause 3.0
     hide text with fade
 
 

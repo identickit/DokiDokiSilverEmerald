@@ -92,13 +92,13 @@ image menu_fade:
 
 # These images show each respective characters' menu sprite and positions/animations.
 
-image menu_art_n:
+image menu_art_k:
     subpixel True
-    "gui/menu_art_n.png"
+    "mod_assets/gui/menu_art_k.png"
     xcenter 530
     ycenter 560
-    zoom 0.8
-    menu_art_move(0.85, 530, 0.85)
+    zoom 0.95
+    menu_art_move(0.95, 530, 0.95)
 
 image menu_art_m:
     subpixel True

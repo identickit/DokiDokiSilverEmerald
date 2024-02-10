@@ -186,6 +186,7 @@ define audio.wnw = "mod_assets/bgm/yuri-wrongopt.ogg" # Yuri-WrongOPT
 define audio.wnf = "mod_assets/bgm/nat-silverforce.ogg" # Natsuki
 define audio.wo2 = "mod_assets/bgm/warpedoldtwo.ogg" # Play With Me (Celebration!)
 define audio.wo3 = "mod_assets/bgm/warpedoldthree.ogg" # Dreams of Love and Literature (Celebration!)
+define audio.wbr = "mod_assets/bgm/warpedbrokenruined.ogg" # EPIPHANY
 
 
 define audio.tmonika = "<loop 4.444>bgm/5_monika.ogg" # Okay Everyone! (Monika)
@@ -236,6 +237,7 @@ define audio.wsw = "mod_assets/sfx/writing.ogg"
 define audio.wst = "mod_assets/sfx/typing.ogg"
 define audio.glitch2 = "mod_assets/sfx/glitch2.ogg"
 define audio.boot = "<loop 4.000>mod_assets/sfx/boot.ogg"
+define audio.wnh = "mod_assets/sfx/warpednewhorn.ogg"
 
 ## Backgrounds 
 image black = "#000000"
@@ -2051,13 +2053,13 @@ image mc 4z = im.Composite((960, 960), (0, 0), "mod_assets/canonmc_assets/4.png"
 define narrator = Character(ctc="ctc", ctc_position="fixed")
 define mc = DynamicCharacter('player', image='mc', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image("mod_assets/gui/celebtextbox6.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#40e482")  ])
+define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image("mod_assets/gui/celebtextbox3.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ff96d1")  ])
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define t = Character('Teacher', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define r = DynamicCharacter('r_name', image='rikka', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define k = DynamicCharacter('k_name', image='kotonoha', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define k = DynamicCharacter('k_name', image='kotonoha', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image("mod_assets/gui/celebtextbox2.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#9f9f9f")  ])
 define w = DynamicCharacter('w_name', image='white', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define w = DynamicCharacter('d_name', image='double', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define u = Character('?????', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
